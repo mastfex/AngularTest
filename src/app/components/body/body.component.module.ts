@@ -7,14 +7,15 @@ import { ClientInformationTemplate } from './clientInformation/clientInfo.compon
 
 @NgModule({
   declarations: [
-
+    BodyTemplate,
+    ClientInformationTemplate
   ],
   exports: [
     BodyTemplate,
   ],
   imports: [
     BrowserModule,
-    ClientInformationTemplate
+
   ],
   providers: [],
   bootstrap: [BodyTemplate],

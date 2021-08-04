@@ -1,15 +1,25 @@
 export class Cliente{
 
+  private rut:string;
   private nombre:string;
   private apellido:string;
   private edad:string;
   private fechaNacimiento:string;
 
-  constructor(nombre:string,apellido:string,edad:string,nacimiento:string){
+  constructor(rut:string,nombre:string,apellido:string,edad:string,nacimiento:string){
+    this.rut=rut;
     this.nombre=nombre;
     this.apellido=apellido;
     this.edad=edad;
     this.fechaNacimiento=nacimiento;
+  }
+
+  public getRut(){
+    return this.rut;
+  }
+
+  public setRut(rut:string){
+    this.rut=rut;
   }
 
   public getNombre(){
