@@ -1,9 +1,10 @@
 <h4 id="titulo"> Seleccione rut </h4>
-    <form class="seleccion">
-        <select name="optionlist" id="optionlist" onchange="getInfoPersona()">
-            <option selected="selected">Seleccione</option>
+    <form class="seleccion"  >
+        <select name="optionlist" id="optionlist" (change)="verInfoCliente()" >
+            <option
+            *ngFor="let item of this.getListaClientes()" selected="selected">{{item.getRut()}}</option>
         </select>
     </form>
-    <div id="infoPersona" class="calculadora">
+    <div id="infoPersona" class="calculadora" *ngIf="let item">
         <ul id="info"></ul>
     </div>

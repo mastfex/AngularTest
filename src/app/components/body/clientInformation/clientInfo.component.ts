@@ -13,7 +13,10 @@ export class ClientInformationTemplate{
   constructor(){
     this.listaClientes=[
       new Cliente('17315306-6','Felipe','Rubin','32','02-03-1990')
+    ,
+      new Cliente('18315306-7','Felipe','Rubin','32','02-03-1990')
     ];
+
   }
 
   public listarRut(){
@@ -27,14 +30,11 @@ export class ClientInformationTemplate{
   }
 
   public verInfoCliente(){
+
     var seleccion = (document.getElementById('optionlist')as HTMLSelectElement).value;
     var div = (document.getElementById('infoPersona')as HTMLSelectElement);
     var h3= document.createElement('h3');
     var ul= (document.getElementById('info')as HTMLSelectElement);
-    if(div.childElementCount>0){
-        div.innerHTML='';
-        ul.innerHTML='';
-    }
 
     for(var x=0; x<this.getListaClientes().length ; x++){
         console.log(seleccion);
