@@ -1,4 +1,4 @@
- export class Paginas{
+ export class header{
   private nombre:string;
   private url:string;
 

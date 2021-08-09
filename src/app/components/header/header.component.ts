@@ -1,23 +1,23 @@
 import{Component} from '@angular/core'
-import { Paginas } from './Paginas';
+import { header } from './header';
 @Component({
   selector :'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent{
-  private paginas= new Array<Paginas>();
+  private paginas= new Array<header>();
   public constructor(){
 
     this.paginas = [
-                    new Paginas('Inicio',''),
-                    new Paginas('Clientes','Clientes'),
-                    new Paginas('Consolas','Consolas.html'),
-                    new Paginas('Contacto','Contacto.html')
+                    new header('Inicio',''),
+                    new header('Clientes','Clientes'),
+                    new header('Consolas','Consolas'),
+                    new header('Contacto','Contacto')
                     ];
   }
 
-  public setPaginas(paginas:Array<Paginas>){
+  public setPaginas(paginas:Array<header>){
     this.paginas=paginas;
   }
 

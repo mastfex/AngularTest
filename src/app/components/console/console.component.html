@@ -1,0 +1,24 @@
+<h3>CONSOLAS DISPONIBLES</h3>
+<table id="consolas">
+  <tr >
+    <th><b>Codigo</b></th>
+    <th><b>Compañia</b></th>
+    <th><b>Modelo</b></th>
+    <th><b>Stock</b></th>
+    <th><b>Precio</b></th>
+  </tr>
+  <ng-container *ngFor="let item of this.getListaConsolas()">
+    <ng-container *ngIf="item.getStock()>0">
+      <tr  [style.background-color]="item.getStock()<=5 ? '#FF9984' : 'white'" >
+        <td>{{item.getCodigo()}}</td>
+        <td>{{item.getCompania()}}</td>
+        <td>{{item.getModelo()}}</td>
+        <td>{{item.getStock()}}</td>
+        <td>{{item.getPrecio()}}</td>
+      </tr>
+    </ng-container>
+  </ng-container>
+
+
+</table>
+

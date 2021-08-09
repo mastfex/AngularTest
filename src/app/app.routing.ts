@@ -3,12 +3,14 @@ import { Routes,RouterModule } from "@angular/router"
 //Componentes
 import { ClientsComponent } from './components/clients/clients.component';
 import { HomeComponent } from "./components/home/home.component";
+import { ConsoleComponent } from "./components/console/console.component";
 
 //Definir rutas
 
 const appRoutes: Routes= [
   {path:"", component: HomeComponent},
   {path:"Clientes", component:ClientsComponent},
+  {path:"Consolas", component:ConsoleComponent},
   {path:"**", component:HomeComponent}
 ];
 

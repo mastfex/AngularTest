@@ -7,6 +7,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './components/home/home.component';
 import { ClientsComponent } from './components/clients/clients.component';
+import { ConsoleComponent } from './components/console/console.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ClientsComponent } from './components/clients/clients.component';
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    ClientsComponent
+    ClientsComponent,
+    ConsoleComponent
   ],
   imports: [
     BrowserModule,

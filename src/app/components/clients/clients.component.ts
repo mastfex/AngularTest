@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Persona } from './persona';
+import { clients } from './clients';
 
 @Component({
   selector: 'app-clients',
@@ -7,13 +7,12 @@ import { Persona } from './persona';
   styleUrls: ['./clients.component.css']
 })
 export class ClientsComponent implements OnInit {
-  private listaClientes=new Array<Persona>();
+  private listaClientes=new Array<clients>();
 
   constructor() {
     this.listaClientes=[
-      new Persona('17315306-6','Felipe','Rubin','31','02-03-1990')
-    ,
-      new Persona('18315306-7','Christian','Ramirez','23','02-03-1995')
+      new clients('17315306-6','Felipe','Rubin','31','02-03-1990'),
+      new clients('18315306-7','Christian','Ramirez','23','02-03-1995')
     ];
    }
 
@@ -65,7 +64,7 @@ public getListaClientes(){
   return this.listaClientes;
 }
 
-  ngOnInit(): void {
-  }
+ngOnInit(): void {
+}
 
 }
