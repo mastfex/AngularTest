@@ -1,4 +1,4 @@
-export class Cliente{
+export class Persona{
 
   private rut:string;
   private nombre:string;

@@ -1,5 +1,5 @@
 import{Component} from '@angular/core'
-import{Paginas} from './class/Paginas'
+import { Paginas } from './Paginas';
 @Component({
   selector :'app-header',
   templateUrl: './header.component.html',
@@ -10,8 +10,8 @@ export class HeaderComponent{
   public constructor(){
 
     this.paginas = [
-                    new Paginas('Inicio','Index.html'),
-                    new Paginas('Juegos','Juegos.html'),
+                    new Paginas('Inicio',''),
+                    new Paginas('Clientes','Clientes'),
                     new Paginas('Consolas','Consolas.html'),
                     new Paginas('Contacto','Contacto.html')
                     ];

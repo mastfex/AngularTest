@@ -1,10 +1,10 @@
  export class Paginas{
   private nombre:string;
-  private link:string;
+  private url:string;
 
   constructor(nom:string,link:string){
     this.nombre=nom;
-    this.link=link;
+    this.url=link;
   }
 
   public getNombre(){
@@ -16,10 +16,10 @@
   }
 
   public getLink(){
-    return this.link;
+    return this.url;
   }
 
-  public setLink(link:string){
-    this.link=link;
+  public setLink(url:string){
+    this.url=url;
   }
 }

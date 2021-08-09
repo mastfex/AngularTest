@@ -1,4 +1,10 @@
-<ul *ngFor="let item of getPaginas()">
-  <li><a href={{item.getLink()}}>{{item.getNombre()}}</a></li>
-</ul>
-<br>
+
+
+<header class="header bg-dark">
+  <ul *ngFor="let item of getPaginas()">
+    <li><a href={{item.getLink()}}>{{item.getNombre()}}</a></li>
+  </ul>
+  <br>
+</header>
+
+
